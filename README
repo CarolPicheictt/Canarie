@@ -1,0 +1,83 @@
+para servir o servidor - node app.js
+instalar npm install ejs
+
+
+
+Marca de Licor
+Nome da Marca: Canarié
+Slogan: Fortemente tropical // Strongly Tropical
+
+Identidade Visual
+Logotipo:
+O logotipo de "Canarié" deve capturar a essência tropical e vibrante da marca. Imagine um pássaro tropical, como um canário, com penas coloridas, sobrevoando frutas tropicais como abacaxi e maracujá. O design deve ser alegre, com uma paleta de cores vibrantes que remeta ao frescor e à energia das bebidas fermentadas tropicais.
+
+Tipografia:
+
+Fonte para o Logotipo: Estilo manuscrito ou brush script, que evoca um toque artesanal e descontraído (ex: Pacifico, Lobster).
+Fonte para o Texto do Site: Sans-serif moderna e legível, com um toque de informalidade (ex: Poppins, Raleway).
+Paleta de Cores
+Amarelo Canário (Canary Yellow): Para capturar a vivacidade tropical.
+Hex: #FFD700
+Verde Lima (Lime Green): Reflete o frescor das frutas tropicais.
+Hex: #32CD32
+Laranja Tropical (Tropical Orange): Para evocar o calor e a energia.
+Hex: #FFA500
+Azul Celeste (Sky Blue): Sugere leveza e frescor.
+Hex: #87CEEB
+Branco Perolado (Pearl White): Para um toque de elegância e contraste.
+Hex: #F8F8FF
+Identidade da Marca
+Missão:
+Oferecer licores fermentados que capturam a essência tropical, proporcionando uma experiência refrescante e exótica em cada gole.
+
+Visão:
+Ser a marca de licores tropicais de referência, celebrando a riqueza dos sabores tropicais com uma mistura única de tradição e inovação.
+
+Valores:
+
+Autenticidade: Respeito pelos ingredientes naturais e fermentação artesanal.
+Tropicalidade: Celebração das cores, sabores e a energia vibrante das frutas tropicais.
+Inovação: Criatividade na criação de novas combinações e experiências sensoriais.
+Sustentabilidade: Compromisso com práticas ecológicas na produção.
+
+
+
+/*****Estrutura do Site*******/
+Home:
+
+Banner Principal: Com uma imagem vibrante de um drink tropical.
+Apresentação: Breve descrição da marca e do que a torna única.
+Destaques de Produtos: Três licores principais com links para mais detalhes.
+Sobre Nós:
+
+História: A origem da marca e a inspiração tropical.
+Equipe: Apresentação dos mestres licoristas e dos colaboradores.
+Nossos Licores:
+
+Portfólio: Catálogo dos licores com descrições detalhadas.
+Notas de Degustação: Informações sobre cada licor, harmonizações e prêmios.
+Blog/Notícias:
+
+Artigos sobre Licores: Conteúdo sobre tipos de licores, harmonizações, receitas de coquetéis.
+Eventos: Informações sobre eventos e degustações.
+Contato:
+
+Formulário de Contato: Para consultas e pedidos.
+Localização: Mapa e direções para a fábrica.
+Redes Sociais: Links para as plataformas sociais da marca.
+SEO e Estratégia de Conteúdo
+Palavras-chave:
+
+Licor tropical
+Bebidas fermentadas artesanais
+Coquetéis exóticos
+Degustação de licores
+Sabores tropicais
+Meta Descrições:
+Descrições únicas para cada página, incluindo palavras-chave relevantes e um tom que destaque a tropicalidade e a inovação.
+
+Blog:
+Artigos regulares sobre como criar coquetéis com licores tropicais, histórias sobre frutas exóticas, e dicas de harmonização para engajar o público.
+
+Imagens:
+Utilizar fotos de alta qualidade dos licores, frutas tropicais, e ambientes tropicais para reforçar o tema da marca. As imagens devem ser otimizadas para a web e incluir alt text descritivo para SEO.

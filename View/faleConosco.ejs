@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+    <link rel="stylesheet" href="/Styles/main.css">
+    <script type="text/javascript" src="/Script/file.js" defer></script>
+
+    <!--Fontes-->
+    <!--Texto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+    <!--Canarié-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/#nossaHistoria">História</a></li>
+            <li><a href="/catalogo?value=1">Portfólio</a></li>
+            <li><a href="/"><h1 style="font-size: 90px;">Canarié</h1></a></li>
+            <li><a href="/noticia/list">Noticias & Artigos</a></li>
+            <li><a href="/faleConosco">Fale Conosco</a></li>
+        </ul>
+        <img src="/Images/vegetaçãoUP.png" id="vegetacaoUP">
+    </nav>
+        <div id="Conteudo"> 
+            <h1>Fale Conosco</h1>  
+
+            <% if (typeof successMessage !== 'undefined') { %>
+                <div class="success-message">
+                    <%= successMessage %>
+                    <em style="font-size: 12px;font-weight: 500;">Obrigada pelo feedback!</em>
+                </div>
+            <% } %>
+            
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <form id="faleConoscoForm" action="http://localhost:3000/enviar" method="POST" onsubmit=" return validarFormulario()">  
+                    <div class="form-group">  
+                        <label for="name">Nome:*</label>  
+                        <input type="text" id="name" name="name">  
+                    </div>  
+                    <span id="erroName" style="color: var(--AmareloCanário)"></span>
+                    <div class="form-group">  
+                        <label for="email">E-mail:*</label>  
+                        <input type="email" id="email" name="email">  
+                    </div>
+                    <span id="erroEmail" style="color: var(--AmareloCanário)"></span>  
+                    <div class="form-group">  
+                        <label for="cep">CEP:</label>  
+                        <input type="text" id="cep" name="cep" >  
+                    </div>  
+                    <span id="erroCEP" style="color: var(--AmareloCanário)"></span>
+                    <div class="form-group">  
+                        <label for="endereco">Endereço:</label>  
+                        <input type="text" id="endereco" name="endereco" disabled>  
+                    </div>  
+                    <div class="form-group">  
+                        <label for="bairro">Bairro:</label>  
+                        <input type="text" id="bairro" name="bairro" disabled>  
+                    </div>  
+                    <div class="form-group">  
+                        <label for="cidade">Cidade:</label>  
+                        <input type="text" id="cidade" name="cidade" disabled>  
+                    </div>   
+                    <div class="form-group">  
+                        <label for="message">Mensagem:*</label>  
+                        <textarea id="message" name="message" rows="4"></textarea>  
+                    </div>  
+                    <span id="erroMessage" style="color: var(--AmareloCanário)"></span>
+                    <button type="submit">Enviar</button>  
+                </form>  
+            </div>
+        </div> 
+    <footer>
+        <div class="footer" style="justify-content: center; align-items: center;">
+            <div class="footer-content">
+                <div class="footer-section contact">
+                    <h2>Contato</h2>
+                    <p>Email: contato@canarie.com</p>
+                    <p>Telefone: (11) 1234-5678</p>
+                    <p>Endereço: Rua Exemplo, 123 - São Paulo, SP</p>
+                </div>
+                <div class="footer-section social">
+                    <h2>Siga-nos</h2>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank">Facebook</a>
+                        <a href="https://instagram.com" target="_blank">Instagram</a>
+                        <a href="https://twitter.com" target="_blank">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+

@@ -1,0 +1,573 @@
+:root {
+    --verdeFloresta: #1b5a44;
+    --verdeFlorestaEscuro: #1a4033;
+    --AmareloCanário: #eeca00;
+    --VerdeLima: #32CD32;
+    --LaranjaTropical: #FFA500;
+    --BrancoPerolado: #F8F8FF;
+}
+
+body{
+    padding-top: 150px;
+    background-color: var(--BrancoPerolado);
+    margin: 0;
+    font-family: 'Red Hat Display';
+    font-weight: 400;
+    font-style: normal;
+    color: var(--verdeFlorestaEscuro);
+
+    /*Textura de Papel*/
+    background-image: url('/Images/NovoProjeto2.png');
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-repeat: repeat-y; /* Evita que a imagem se repita */
+    /*background-attachment: fixed; Mantém a imagem fixa durante a rolagem */
+    background-position: center; /* Centraliza a imagem no fundo */
+}
+
+p{
+    font-family: 'Red Hat Display';
+    font-weight: 400;
+    padding: 15px;
+}
+
+/*Use a value from 300 to 900*/
+
+nav {
+    position: fixed;
+    top: 0; 
+    left: 0;
+    right: 0;
+    width: 100%;
+    color: var(--BrancoPerolado);
+    height: 150px;
+    background-color: var(--verdeFloresta);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+#vegetacaoUP {
+    position: absolute; /* Coloca a imagem fora do fluxo normal */
+    right: 0;
+    top: -30px; /* Ajusta para fazer as folhas ultrapassarem o nav */
+    height: 260px;
+    z-index: 1; /* Mantém a imagem atrás do conteúdo */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    z-index: 2; /* Garante que o conteúdo da lista fique na frente da imagem */
+    position: relative; /* Para manter o conteúdo na frente da imagem */
+    gap: 50px;
+    font-weight: 700;
+    font-size: 18px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    height: 150px;
+}
+
+nav ul li a {
+    color: var(--BrancoPerolado);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+#logoNav{
+    width: 150px;
+}
+
+#NoticiasBox{
+    margin: 20px;
+    box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: stretch;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: left;
+    max-height: 440px;
+}
+
+#NoticiasBox > div {
+    flex: 1 1 calc(26% - 10px); 
+    flex-direction: column;
+    margin: 5px;
+    box-sizing: border-box;
+    background-color: #e0e0e0;
+    min-height: 210px;
+    padding: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adiciona "..." ao final do texto se for muito longo */
+    flex-grow: 1; /* Cada item vai crescer para ocupar o espaço disponível */
+    text-align: left;
+    position: relative;
+}
+
+#NoticiasBox > div img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    filter: brightness(50%);
+}
+
+#NoticiasBox > div a {
+    text-decoration: none;
+}
+
+.text-content {
+    position: relative; 
+    z-index: 2; 
+    color: var(--BrancoPerolado);color: white; 
+    margin-top: auto;
+}
+
+.image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    z-index: 1; 
+}
+
+.image-header {
+    position: relative; 
+    height: 200px; 
+    overflow: hidden; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.imagem-centralizada {
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    max-width: 100%;  
+}
+
+#Conteudo{
+    margin: 40px;
+}
+
+.center-div {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#titulo1{
+    width: 700px;
+}
+
+#titulo2{
+    position: relative; 
+    justify-content: center; 
+    align-items: center;
+}
+
+h1{
+    color: var(--AmareloCanário);
+    font-size: 60px;
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    z-index: 2;
+}
+
+h2{
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 2;
+}
+
+.TipoLicor{
+    color: var(--AmareloCanário);
+    font-size: 26px;
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin: 0 15px 0 15px;
+}
+
+#PassaroLateral {
+    position: absolute; /* A imagem será posicionada em relação ao contêiner */
+    top: -280px; 
+    left: 0;            /* Ajuste a posição verticalmente */
+    margin: -40px;
+    width: 460px;
+    z-index: 0; /* Mantém a imagem atrás do conteúdo */
+}
+
+.flexBox{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box {
+    background-color: var(--verdeFloresta);
+    padding: 20px;
+    color: var(--BrancoPerolado);
+    text-align: center;
+    width: 250px;
+    flex: 1;
+    box-sizing: border-box;
+    border-radius: 0 20px;
+    z-index: 2;
+    box-shadow: inset 4px 4px 8px rgba(2, 53, 32, 0.288);
+}
+
+.CompraButton{
+    background-color: var(--AmareloCanário);
+    width: 50%;
+    color: var(--BrancoPerolado);
+    font-family: 'Red Hat Display';
+    font-weight: bolder;
+    font-size: 24px;
+    border: none;
+    border-radius: 60px 60px;
+    padding: 15px;
+    margin-bottom: 40px;
+    box-shadow: inset 0 4px 8px rgba(151, 123, 0, 0.349);
+    cursor: pointer;
+}
+
+.licores-info {
+    display: flex;
+    flex-direction: column;
+    width: 400px; 
+}
+
+#SobreNos{
+    background-color: var(--verdeFloresta);
+    color: var(--BrancoPerolado);
+    margin: 0 -40px;
+    padding: 20px 60px;
+    position: relative;
+}
+
+.SobreNosH3{
+    color: var(--AmareloCanário);
+    font-size: 32px;
+    font-family: "Berkshire Swash", serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: left;
+    z-index: 2;
+    padding-left: 15px;
+}
+
+#SobreNos p {
+    position: relative;
+    z-index: 2; /* Garante que o texto fique acima da imagem */
+}
+
+#PlantaBicoPapagaio{
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    height: 700px; 
+    z-index: 1; /* Coloca a imagem atrás do texto */
+}
+
+#FachadaCanarié{
+    width: 100%; /* A imagem será responsiva */
+    max-width: 400px; /* Largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    float: right; /* Faz a imagem flutuar à direita */
+    margin-left: 20px; /* Espaçamento à esquerda da imagem */
+    margin-bottom: 20px; /* Espaçamento abaixo da imagem */
+}
+
+@media (max-width: 600px) {
+    #FachadaCanarié {
+        float: none; /* Remove o float em telas pequenas */
+        display: block; /* A imagem ocupará toda a largura */
+        margin: 20px auto; /* Centraliza a imagem */
+    }
+}
+
+.footer{
+    background-color: var(--verdeFloresta);
+    height: 250px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.footer-content {
+    z-index: 2; /* Garante que o conteúdo fique acima da imagem */
+    display: flex; /* Flexbox para organizar as seções */
+    justify-content: center;
+    flex-direction: row; /* Organiza as seções em linha */
+    gap: 20px; /* Espaçamento entre as seções */
+    margin-bottom: 20px ;
+}
+
+.footer-section h2 {
+    margin-bottom: 10px; /* Espaço abaixo do título */
+    color: white; /* Cor do texto do título */
+}
+
+.footer-section p {
+    font-size: 14px; 
+    line-height: 0.3px; 
+    color: var(--BrancoPerolado)
+}
+
+.social-links a {
+    display: inline-block; /* Para permitir espaçamento entre os links */
+    color: var(--BrancoPerolado);
+    margin-right: 10px; /* Espaçamento entre os links */
+    text-decoration: none; /* Remove sublinhado dos links */
+}
+
+.social-links a:hover {
+    text-decoration: underline; 
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    color: var(--AmareloCanário);
+}
+
+#navCategorias {
+    height: 70px;
+    background-color: transparent;
+    display: flex;
+    box-shadow: 0 4px 15px rgba(5, 56, 25, 0.356);
+    border-radius: 0 0 15px 15px;
+    margin-top: -40px;
+}
+
+#navCategorias ul {
+    list-style-type: none;
+    display: flex;
+    font-weight: 700;
+    font-size: 18px;
+    text-shadow: none;
+    position: relative;
+    z-index: 11;
+    margin: 0;
+    margin-bottom: -10px;
+}
+
+#navCategorias ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+}
+
+#navCategorias ul li:hover {
+    background-color: var(--verdeFloresta);
+    color: var(--BrancoPerolado);
+    border-radius: 0 0 20px 20px;
+}
+
+#navCategorias ul li.active{
+    background-color: var(--verdeFloresta);
+    color: var(--BrancoPerolado);
+    border-radius: 0 0 20px 20px;
+}
+
+#navCategorias ul li a {
+    color: var(--verdeFloresta);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+#navCategorias ul li:hover a {
+    color: var(--BrancoPerolado);
+}
+
+
+
+
+/*View Produtos*/
+
+#produtos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+
+.produto{
+    border-radius: 0 10px;
+    box-shadow: 0 4px 15px rgba(5, 56, 25, 0.356);
+    background-color: rgba(128, 128, 128, 0.116);
+    width: 350px;
+    text-align: center;
+    padding: 10px;
+    z-index: 2;
+    backdrop-filter: blur(10px); /* Aplica o desfoque ao fundo */
+    -webkit-backdrop-filter: blur(10px); /* Compatibilidade com navegadores WebKit */
+    
+}
+
+.produto button{
+    margin-bottom: 15px ;
+    padding: 10px;
+    background-color: var(--verdeFloresta);
+    color: var(--BrancoPerolado);
+    width: 50%;
+    height: 50px;
+    font-family: 'Red Hat Display';
+    font-weight: bolder;
+    font-size: 16px;
+    border: none;
+    border-radius: 0px 15px;
+    box-shadow: 0 4px 8px rgba(92, 92, 92, 0.349);
+    cursor: pointer;
+}
+
+.produto img{
+    height: 340px;
+    width: 300px;
+    object-fit: cover;
+    border-radius:5px;
+    padding-top: 25px;
+}
+
+.tituloPortfolio{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.produto-container {
+    display: flex; /* Usar flexbox para disposição lado a lado */
+    align-items: center; /* Alinhar itens no centro verticalmente */
+    margin-bottom: 20px; /* Espaçamento entre os produtos */
+    position: relative;
+}
+
+.imagem-container {
+    flex: 1; /* A imagem ocupará 50% da largura total */
+    max-width: 50%; /* Limitar a largura máxima a 50% */
+    z-index: 2;
+}
+
+.imagem-container img {
+    width: 100%; /* A imagem ocupará 100% da largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    z-index: 2;
+    box-shadow: 0 5px 8px rgba(10, 63, 15, 0.466);
+}
+
+.texto-container {
+    flex: 1; /* O texto ocupará o restante da largura */
+    padding-left: 20px; /* Espaçamento entre a imagem e o texto */
+    max-width: 50%; /* Limitar a largura máxima a 50% */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*FALE CONOSCO*/
+#faleConoscoForm{
+    width: 70%;
+}
+
+.form-group {
+    margin: 5px;
+    display: block;
+}
+
+.form-group label{
+    font-weight: bold;
+}
+
+.form-group input,.form-group textarea{
+    border: 1px;
+    border-radius: 10px 0;
+    width: 100%;
+}
+
+.form-group input{
+    height: 35px;
+}
+
+.form-group input:disabled{
+    background-color: rgba(128, 128, 128, 0.158);
+}
+
+#faleConoscoForm button{
+    margin: 20px 0;
+    padding: 10px;
+    background-color: var(--verdeFloresta);
+    color: var(--BrancoPerolado);
+    width: 50%;
+    height: 50px;
+    font-family: 'Red Hat Display';
+    font-weight: bolder;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px 0;
+    box-shadow: 0 4px 8px rgba(92, 92, 92, 0.349);
+    cursor: pointer;
+}
+
+.success-message {
+    background-color: #0cb86850;
+    color: var(--verdeFloresta);
+    font-weight: bolder;
+    margin-bottom: 10px;
+    border: 1px #1a4033;
+    border-radius: 15px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    align-items: center;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.noticialist{
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.205);
+    border-radius: 20px;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.noticia-text {
+    display: flex;
+    flex-grow: 1;
+}
+
+.buttonList{
+    height: 50px;
+    margin: 15px;
+    padding: 0 15px;
+    background-color: var(--AmareloCanário);
+    color: var(--BrancoPerolado);
+    font-family: 'Red Hat Display';
+    font-weight: bolder;
+    font-size: 16px;
+    border: none;
+    border-radius: 0px 30px;
+    box-shadow: inset 0 4px 8px rgba(151, 123, 0, 0.349);
+    cursor: pointer;
+}
+
+
