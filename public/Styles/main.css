@@ -18,10 +18,9 @@ body{
 
     /*Textura de Papel*/
     background-image: url('/Images/NovoProjeto2.png');
-    background-size: cover; /* Faz a imagem cobrir todo o fundo */
-    background-repeat: repeat-y; /* Evita que a imagem se repita */
-    /*background-attachment: fixed; Mantém a imagem fixa durante a rolagem */
-    background-position: center; /* Centraliza a imagem no fundo */
+    background-size: cover; 
+    background-repeat: repeat-y;
+    background-position: center;
 }
 
 p{
@@ -104,7 +103,6 @@ nav ul li a {
     display: flex;
     overflow: hidden;
     text-overflow: ellipsis; /* Adiciona "..." ao final do texto se for muito longo */
-    flex-grow: 1; /* Cada item vai crescer para ocupar o espaço disponível */
     text-align: left;
     position: relative;
 }

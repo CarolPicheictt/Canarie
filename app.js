@@ -1,4 +1,4 @@
-/**Aplicação Express é inicializada e conecta as rotas ao servidor. */
+/**Aplicação express inicia e conecta as rotas ao servidor. */
 
 const express = require('express');
 const cors = require('cors');
@@ -13,7 +13,7 @@ const corsOptions = {
   };
 app.use(cors(corsOptions));
 app.use(express.json());
-app.use(express.urlencoded({ extended: true })); // Para dados de formulário
+app.use(express.urlencoded({ extended: true })); // Para dados do formulário
 
 // Rotas
 app.use(Routes);

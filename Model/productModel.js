@@ -1,5 +1,3 @@
-/* Consultas ao banco de dados. */
-
 const connection = require('../dbMySQL');
 
 class ProductModel {

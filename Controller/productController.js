@@ -1,4 +1,3 @@
-/**Aqui ficam as rotas e o controle da lógica */
 const ProductModel = require('../Model/productModel');
 
 class ProductController {
