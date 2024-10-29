@@ -1,5 +1,3 @@
-/*Aqui vão as funções para buscar os dados do backend e exibi-los no frontend.*/
-
 /*-------------------Produtos----------------- */
 function exibirProdutos() {
     const divProdutos = document.getElementById("produtos");
@@ -228,7 +226,7 @@ cep.addEventListener('focusout',async() =>{
             erroCEP.textContent = error.cep_error;  
             setTimeout(() => {  
                 erroCEP.textContent = '';  
-            }, 5000); // Após 5s a mensagem desaparece  
+            }, 5000); 
         }  
     }  
 });

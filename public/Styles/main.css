@@ -29,8 +29,6 @@ p{
     padding: 15px;
 }
 
-/*Use a value from 300 to 900*/
-
 nav {
     position: fixed;
     top: 0; 
@@ -48,7 +46,7 @@ nav {
 }
 
 #vegetacaoUP {
-    position: absolute; /* Coloca a imagem fora do fluxo normal */
+    position: absolute; 
     right: 0;
     top: -30px; /* Ajusta para fazer as folhas ultrapassarem o nav */
     height: 260px;
@@ -199,9 +197,9 @@ h2{
 }
 
 #PassaroLateral {
-    position: absolute; /* A imagem será posicionada em relação ao contêiner */
+    position: absolute; 
     top: -280px; 
-    left: 0;            /* Ajuste a posição verticalmente */
+    left: 0;     
     margin: -40px;
     width: 460px;
     z-index: 0; /* Mantém a imagem atrás do conteúdo */
@@ -280,12 +278,12 @@ h2{
 }
 
 #FachadaCanarié{
-    width: 100%; /* A imagem será responsiva */
-    max-width: 400px; /* Largura máxima da imagem */
-    height: auto; /* Mantém a proporção da imagem */
-    float: right; /* Faz a imagem flutuar à direita */
-    margin-left: 20px; /* Espaçamento à esquerda da imagem */
-    margin-bottom: 20px; /* Espaçamento abaixo da imagem */
+    width: 100%; 
+    max-width: 400px; 
+    height: auto; 
+    float: right;
+    margin-left: 20px; 
+    margin-bottom: 20px; 
 }
 
 @media (max-width: 600px) {
@@ -412,7 +410,7 @@ h2{
     text-align: center;
     padding: 10px;
     z-index: 2;
-    backdrop-filter: blur(10px); /* Aplica o desfoque ao fundo */
+    backdrop-filter: blur(10px); /* Aplica o desfoque de fundo */
     -webkit-backdrop-filter: blur(10px); /* Compatibilidade com navegadores WebKit */
     
 }
@@ -460,14 +458,14 @@ h2{
 }
 
 .imagem-container img {
-    width: 100%; /* A imagem ocupará 100% da largura do contêiner */
+    width: 100%; /* A imagem com 100% da largura do contêiner */
     height: auto; /* Mantém a proporção da imagem */
     z-index: 2;
     box-shadow: 0 5px 8px rgba(10, 63, 15, 0.466);
 }
 
 .texto-container {
-    flex: 1; /* O texto ocupará o restante da largura */
+    flex: 1; /* O texto ocupa o restante da largura */
     padding-left: 20px; /* Espaçamento entre a imagem e o texto */
     max-width: 50%; /* Limitar a largura máxima a 50% */
     display: flex;
