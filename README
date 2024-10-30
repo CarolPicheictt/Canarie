@@ -1,16 +1,17 @@
-Canarié - Sua Marca de Licores Artesanais! 🍍🍸
-Uma marca de licor artesanal que celebra a essência tropical! Este projeto web é uma homenagem à diversidade dos sabores e à autenticidade dos licores Canarié.
+# Canarié - Sua Marca de Licores Artesanais! 🍍🍸
 
-Por que o GitHub Pages não está funcionando?
+## Sobre o Projeto
+
+**Canarié** : Uma marca de licor artesanal que celebra a essência tropical! Este projeto web é uma homenagem à diversidade dos sabores e à autenticidade dos licores Canarié.
+
+##Por que o GitHub Pages não está funcionando?
 
 Este projeto utiliza framework Express.js para gerenciar o servidor e renderizar as páginas da aplicação. Como o GitHub Pages é uma plataforma voltada exclusivamente para sites estáticos (HTML, CSS e JavaScript), ele não suporta a execução de servidores Node.js ou outras funcionalidades de backend necessárias para o funcionamento deste projeto. Portanto, para experimentar todas as funcionalidades, você precisará rodar o projeto localmente.
 
-Como Rodar o Projeto Localmente?
-Siga os passos abaixo para configurar e executar o projeto em sua máquina:
+## Como Rodar o Projeto Localmente
 
-1.Clone o repositório:
-
-git clone https://github.com/CarolPicheictt/Canarie.git
+1. Clone o repositório:
+   git clone https://github.com/CarolPicheictt/Canarie.git
 
 2.Instale as dependências e inicie o servidor: 
 Navegue até o diretório do projeto e execute os seguintes comandos:
@@ -21,6 +22,6 @@ node app.js
 3.Acesse o projeto no seu navegador: 
 Abra seu navegador e vá para http://localhost:3000 para explorar as maravilhas do site Canarié!
 
-Atenção!
+#Atenção!
 O projeto é populado com registros do banco de dados, portanto, a visualização completa depende da execução do node app.js e da correta configuração do arquivo .env com as credenciais do banco de dados. 
 Certifique-se de que o MySQL está instalado e funcionando para garantir uma experiência completa.
