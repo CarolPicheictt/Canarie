@@ -1,3 +1,6 @@
 # Canarié - Fortemente Tropical 🍍🍸
 
 **Canarié** é uma marca de licor artesanal com um toque vibrante e exótico. Este projeto web é um site exemplo para celebrar a tropicalidade dos sabores e a autenticidade dos licores Canarié. 
+
+Para executar o projeto:
+node app.js
